@@ -181,18 +181,14 @@ class Rekomendasi extends CI_Controller {
 		$this->load->view('page_rekomendasi',$data);
 		$this->load->view('template/_footer');
 	}
-	function test()
+	/*function test()
 	{
 		$this->session->sess_expiration = 5;
         $this->session->sess_expire_on_close = TRUE;
-		/*$array = array(
-			'username' => 'chandra'
-		);
 		
-		$this->session->set_userdata( $array );*/
 		echo "<pre>";print_r($this->session->all_userdata());
 		
-	}
+	}*/
 	function form_detail($id_mesin)
 	{
 		$this->load->model('m_mesin');

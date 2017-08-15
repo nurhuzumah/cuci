@@ -83,7 +83,6 @@ class Mesin_cuci extends CI_Controller {
 		$parameter=$this->db->get('tran_parameter')->result();
 		$data=array('id_mesin_kategori'=>$this->input->post('kategori'),
 					'jenis_tabung'=>$this->input->post('jenis_tabung'),
-					'bukaan_pintu'=>$this->input->post('bukaan_pintu'),
 					'fitur_lainya'=>$this->input->post('fitur'),
 					'nama_mesin'=>$this->input->post('nama'));
 		$this->db->trans_begin();
